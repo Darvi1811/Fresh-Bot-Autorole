@@ -54,4 +54,4 @@ class MyClient(discord.Client):
 #Запус бота
 client = MyClient()
 token = os.environ.get("BOT_TOKEN")
-bot.run(str(token))
+client.run(str(token))
