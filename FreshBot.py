@@ -44,6 +44,7 @@ class MyClient(discord.Client):
             print(repr(e))
 
 bot = commands.Bot(command_prefix = "!")
+@bot.command()
 async def ping(ctx):
     await ctx_send("{member.mention}, я в сети!")
 
