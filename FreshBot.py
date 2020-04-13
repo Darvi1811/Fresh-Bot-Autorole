@@ -43,6 +43,9 @@ class MyClient(discord.Client):
         except Exception as e:
             print(repr(e))
 
+bot = commands.Bot(command_prefix = "!")
+async def ping(ctx):
+    await ctx_send("{member.mention}, я в сети!")
 
 
 
