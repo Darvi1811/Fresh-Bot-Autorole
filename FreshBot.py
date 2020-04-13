@@ -42,7 +42,10 @@ class MyClient(discord.Client):
             print('[ERROR] KeyError, no role found for ' + emoji)
         except Exception as e:
             print(repr(e))
+    async def !ping(ctx):
+        await ctx.send("{member.mention}, я в сети!")
 
+            
 
 
 
